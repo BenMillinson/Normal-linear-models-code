@@ -125,6 +125,8 @@ predict(model_x, newdata = x, interval = 'confidence', level = .95)
 #inter-subject = random effects; subject (Intercept)
 #intra-subject = random effects; residual
 
+#use the prediction function the same way as previously shown
+
 #where x1 are the same variables
 #and subject is the grouping variable
 M_x <- lmer(var_x ~ x1 + (x1|subject),
